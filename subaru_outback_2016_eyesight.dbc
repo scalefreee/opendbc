@@ -54,6 +54,7 @@ BO_ 320 Throttle: 8 XXX
 
 BO_ 209 NEW_MSG_1: 8 XXX
  SG_ BrakePosition : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ vehicle_speed : 0|16@1+ (0.05625,0) [0|65535] "km/h" XXX
 
 BO_ 2 Steering: 8 XXX
  SG_ SteeringAngle : 7|16@0- (0.1,0) [-500|500] "degree" XXX
@@ -63,11 +64,11 @@ BO_ 642 NEW_MSG_2: 8 XXX
 
 
 
-CM_ "CHFFR_METRIC 2 STEER_ANGLE STEER_ANGLE 0.36 180";
+
 
 VAL_ 324 BrakeApplied 1 "On" 0 "Off" ;
 VAL_ 324 CruiseEnabled 1 "On" 0 "Off" ;
 VAL_ 324 BrakeStatus 1 "On" 0 "Off" ;
 VAL_ 324 CruiseButtons 2 "Set" 1 "Resume" ;
-
 VAL_ 642 TurnSignal 2 "Left" 1 "Right" ;
+CM_ "CHFFR_METRIC 2 STEER_ANGLE STEER_ANGLE 0.36 180";
